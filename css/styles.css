@@ -55,16 +55,20 @@ body {
     border-radius: 1rem;
 }
 
-.img:hover{
+
+.img:hover {
+    
     cursor: pointer;
+
 }
+
 .title {
     color: var(--white);
     font-size: 1.4rem;
     padding: 1.5rem 0 1rem 0;
 }
 
-.title:hover{
+.title:hover {
     color: var(--cyan);
     cursor: pointer;
 }
@@ -109,22 +113,23 @@ body {
     gap: 1rem;
 }
 
-.img-creator{
+.img-creator {
     width: 11%;
     border: solid 2px var(--white);
     border-radius: 2rem;
 }
 
-.creationAuthor{
+.creationAuthor {
     font-size: 1.1rem;
     color: var(--text);
 }
 
-.authorName{
+.authorName {
     color: var(--white);
     font-size: 1.1rem;
     cursor: pointer;
 }
-.authorName:hover{
+
+.authorName:hover {
     color: var(--cyan);
 }
