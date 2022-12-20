@@ -9,6 +9,11 @@
     --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
     --Very-dark-blue-line: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
+
+    /* PERSONAL */
+    --wrapper-main-blue: rgb(12, 23, 41);
+    --text: rgb(135, 155, 182);
+
 }
 
 * {
@@ -16,4 +21,110 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: var(--Very-dark-blue-main-BG);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-colour {
+    background-color: var(--wrapper-main-blue);
+    border-radius: 2rem;
+}
+
+.wrapper-main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-dark-blue-card-BG);
+    margin: 1.5rem 1rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.img {
+    display: flex;
+    background-image: url(../images/image-equilibrium.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 42vh;
+    border-radius: 1rem;
+}
+
+.img:hover{
+    cursor: pointer;
+}
+.title {
+    color: var(--white);
+    font-size: 1.4rem;
+    padding: 1.5rem 0 1rem 0;
+}
+
+.title:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.text {
+    color: var(--text);
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-right: .8rem;
+    line-height: 1.7rem;
+}
+
+.info {
+    display: flex;
+    padding: 1.5rem 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px var(--Very-dark-blue-line);
+}
+
+.price {
+    display: flex;
+    color: var(--cyan);
+    gap: .5rem;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.days {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.creator-container {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.img-creator{
+    width: 11%;
+    border: solid 2px var(--white);
+    border-radius: 2rem;
+}
+
+.creationAuthor{
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.authorName{
+    color: var(--white);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.authorName:hover{
+    color: var(--cyan);
 }
